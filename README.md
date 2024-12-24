@@ -115,29 +115,20 @@
 
 ## 项目结构
 
+```
 flask_zhiliaooa/
-
 ├── app.py # 应用入口
-
 ├── config.py # 配置文件
-
 ├── exts.py # 扩展文件
-
 ├── models.py # 数据模型
-
 ├── decorators.py # 装饰器
-
 ├── blueprints/ # 蓝图目录
-
 │ ├── auth.py # 认证蓝图
-
 │ ├── qa.py # 问答蓝图
-
 │ └── forms.py # 表单验证
-
 ├── templates/ # 模板文件
-
 └── static/ # 静态文件
+```
 
 ## 环境要求
 
@@ -167,62 +158,55 @@ flask_zhiliaooa/
    USERNAME = 'your_username'
    PASSWORD = 'your_password'
    ```
+
 4. 初始化数据库
 
    ```
-   flask db init
-   flask db migrate
    flask db upgrade
    ```
-   1. 运行项目
 
-      ```
-      flask run
-      ```
-      ## 项目所需的主要依赖包
+5. 运行项目
 
+   ```
+   flask run
+   ```
 
-      1. 核心框架：
+## 项目所需的主要依赖包
+1. 核心框架：
+   * Flask - Web框架
+   * Jinja2 - 模板引擎
+2. 数据库相关：
+   * Flask-SQLAlchemy - ORM框架
+   * PyMySQL - MySQL驱动
+   * Flask-Migrate - 数据库迁移工具
+3. 表单和验证：
+   * WTForms - 表单验证
+   * email-validator - 邮箱验证
+4. 邮件功能：
+   * Flask-Mail - 邮件发送
+5. 安全相关：
+   * Werkzeug - 提供密码哈希等安全功能
+6. 开发工具：
+   * python-dotenv - 环境变量管理
 
-         * Flask - Web框架
-         * Jinja2 - 模板引擎
-      2. 数据库相关：
+## 开发计划
 
-         * Flask-SQLAlchemy - ORM框架
-         * PyMySQL - MySQL驱动
-         * Flask-Migrate - 数据库迁移工具
-      3. 表单和验证：
+### 待实现功能
 
-         * WTForms - 表单验证
-         * email-validator - 邮箱验证
-      4. 邮件功能：
+- [ ] 用户头像上传
+- [ ] 富文本编辑器
+- [ ] 评论点赞功能
+- [ ] 问题标签功能
+- [ ] 用户个人中心
 
-         * Flask-Mail - 邮件发送
-      5. 安全相关：
+## 贡献指南
 
-         * Werkzeug - 提供密码哈希等安全功能
-      6. 开发工具：
+欢迎提交 Issue 和 Pull Request。在提交代码前，请确保：
 
-         * python-dotenv - 环境变量管理
+1. 代码符合项目规范
+2. 添加必要的注释
+3. 更新相关文档
 
-      ## 开发计划
+## 许可证
 
-      ### 待实现功能
-
-      - [ ] 用户头像上传
-      - [ ] 富文本编辑器
-      - [ ] 评论点赞功能
-      - [ ] 问题标签功能
-      - [ ] 用户个人中心
-
-      ## 贡献指南
-
-      欢迎提交 Issue 和 Pull Request。在提交代码前，请确保：
-
-      1. 代码符合项目规范
-      2. 添加必要的注释
-      3. 更新相关文档
-
-      ## 许可证
-
-      本项目采用 MIT 许可证
+本项目采用 MIT 许可证
