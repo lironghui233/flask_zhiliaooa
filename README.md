@@ -162,7 +162,9 @@ flask_zhiliaooa/
 4. 初始化数据库
 
    ```
-   flask db upgrade
+   # flask db init：初始化orm数据库
+   # flask db migrate：将orm模型生成迁移脚本
+   # flask db upgrade：将迁移脚本映射到数据库中
    ```
 
 5. 运行项目
