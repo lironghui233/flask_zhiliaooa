@@ -11,11 +11,10 @@ DB_URI = 'mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8mb4'.format(USERNAME, PASSW
 SQLALCHEMY_DATABASE_URI = DB_URI
 
 
-# vvlnwzfmgrpobbia
 # 邮箱配置
 MAIL_SERVER = 'smtp.QQ.com'
 MAIL_PORT = 465
 MAIL_USE_SSL = True
-MAIL_USERNAME = '707568633@qq.com'
-MAIL_PASSWORD = 'vvlnwzfmgrpobbia'
-MAIL_DEFAULT_SENDER = '707568633@qq.com'
+MAIL_USERNAME = ''
+MAIL_PASSWORD = ''
+MAIL_DEFAULT_SENDER = ''
